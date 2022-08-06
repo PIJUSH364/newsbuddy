@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  /* position: relative; */
+  z-index: 99;
+  padding: 20px;
+  color: #fff;
+  top: 0;
+  position: sticky;
+  font-family: "Anek Malayalam", sans-serif;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  color: tomato;
+}
+.logo p {
+  font-family: Playfair Display, serif;
+  letter-spacing: 3px;
+}
+.logo .font {
+  color: #fff;
+}
+.logo:hover {
+  color: #fff;
+  cursor: -webkit-grabbing;
+  transition: all 0.7s ease-in-out;
+}
+.logo:hover .font {
+  color: tomato;
+  transition: all 0.7s ease-in-out;
+}
+.menu-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+}
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.menu-list li a:hover,
+.menu-list li a.active {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  transition: all 0.7s ease-in-out;
+}
+.menu-icon {
+  display: none;
+}
+
+.fas {
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.fas:hover {
+  color: tomato;
+  transition: all 0.4s ease-in-out;
+}
+.menu-icon .fa-times {
+  transform: rotate(120deg);
+  transition: all 0.2s ease-in-out;
+  color: tomato;
+}
+.menu-icon .fa-times {
+  transform: rotate(130deg);
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 800px) {
+  .logo {
+    font-size: 20px;
+  }
+  .menu-list li a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-list {
+    opacity: 1;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    right: 0;
+    top: 68px;
+    /* display: contents; */
+    display: flex;
+    border-radius: 0px 0 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    transition: all 0.8s ease-in-out;
+  }
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-list li:last-child {
+    margin-bottom: 0;
+  }
+  .menu-list.close {
+    /* right: -100%; */
+    /* display: none; */
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+  }
+}

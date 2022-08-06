@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: decimal-leading-zero;
+}
+.cardList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 40px;
+}
+.together {
+  align-items: center;
+  background-color: #878a8f5e;
+  color: #878a8f;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  height: 60vh;
+  padding: 6rem 0;
+  row-gap: 0.5rem;
+}
