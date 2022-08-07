@@ -1,12 +1,12 @@
 import React from "react";
 import "./TopicHighlight.css";
 
-function TopicHighlight() {
+function TopicHighlight(props) {
   return (
     <div className="topicHighlight">
       <div className="highlightText">
-        <p>Lorem ipsum dolor sit</p>
-        <h1>HOT NEWS TODAY </h1>
+        <p>{props.subtitle} </p>
+        <h1>{props.title} </h1>
       </div>
     </div>
   );

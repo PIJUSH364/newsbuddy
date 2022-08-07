@@ -3,11 +3,10 @@ import Carditem from "./Carditem";
 import "./CardList.css";
 import TopicHighlight from "./TopicHighlight";
 
-
 function CardList() {
   return (
     <div className="cardAll">
-      <TopicHighlight />
+      <TopicHighlight title="TODAY HOT NEWS" subtitle="MOST VIEWED ARTICLE" />
       <div className="card-render">
         <Carditem />
       </div>
