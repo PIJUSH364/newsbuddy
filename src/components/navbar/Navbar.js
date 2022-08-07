@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+
 import { MenuList } from "./Menulist";
 import "./Navbar.css";
 function Navbar() {
@@ -20,10 +20,19 @@ function Navbar() {
 
   return (
     <nav>
-      <div className="logo">
-        <p>
-          NEWS<span className="font">Buddy</span>{" "}
-        </p>
+      <div className="heading-banner">
+        <div className="logo">
+          <p>
+            News🌍<span className="font">Budy</span>{" "}
+          </p>
+          <p className="slogan">Daily fresh news</p>
+        </div>
+        <div
+          className="healing-logo"
+          // style={{
+          //   background: `url(${"https://image.shutterstock.com/image-vector/blue-wide-screen-webpage-business-600w-695161762.jpg"})`,
+          // }}
+        ></div>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

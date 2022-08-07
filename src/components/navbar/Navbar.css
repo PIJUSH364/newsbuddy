@@ -3,30 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
-  background: rgba(0, 0, 0, 0.8);
+  /* background: rgba(0, 0, 0, 0.733); */
+  background-size: 100%;
   display: flex;
-  justify-content: space-between;
-  /* position: relative; */
+  flex-direction: column;
+  row-gap: 21px;
+  margin-bottom: 20px;
   z-index: 99;
-  padding: 20px;
+  padding: 10px 50px 4px 50px;
   color: #fff;
   top: 0;
-  position: sticky;
+  /* position: sticky; */
   font-family: "Anek Malayalam", sans-serif;
 }
-
+nav .heading-banner {
+  display: flex;
+  flex-direction: row;
+  column-gap: 110px;
+  justify-content: space-between;
+}
+nav .heading-banner .healing-logo {
+  width: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-size: cover;
+}
+img {
+  height: 80px;
+  width: 200px;
+}
 .logo {
   font-size: 25px;
   font-weight: 600;
-  color: tomato;
-}
-.logo p {
-  font-family: Playfair Display, serif;
+  /* color: tomato; */
+  color: #000;
+  font-family: "Playfair Display", "Montserrat";
   letter-spacing: 3px;
 }
+.logo p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.logo .slogan {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  top: 2px;
+}
+/* nav .heading-banner {
+  display: flex;
+  justify-content: space-between;
+} */
+.logo p {
+}
 .logo .font {
-  color: #fff;
+  /* color: #fff; */
 }
 .logo:hover {
   color: #fff;
@@ -40,18 +75,27 @@ nav {
 .menu-list {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   letter-spacing: 2px;
   font-weight: 1000;
+  align-content: center;
+  justify-content: space-between;
 }
+
 .menu-list li a {
   color: #fff;
+  color: #000;
   text-decoration: none;
   font-size: 19px;
   font-weight: 600;
-  padding: 5px 10px;
-  margin-left: 20px;
+  /* padding: 5px 10px; */
+  /* margin-left: 20px; */
+}
+nav ul {
+  padding-left: 0rem;
+  border: 1px solid rgba(128, 128, 128, 0.63);
+  border-left: none;
+  border-right: none;
+  padding: 8px 2px;
 }
 .menu-list li a:hover,
 .menu-list li a.active {
@@ -62,6 +106,7 @@ nav {
 }
 .menu-icon {
   display: none;
+  color: tomato;
 }
 
 .fas {

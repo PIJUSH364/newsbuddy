@@ -25,15 +25,12 @@
 .news-cardItem a {
   text-decoration: none;
 }
-.news-card-img {
-  text-align: center;
+.news-card-body .news-card-img {
   height: 26vh;
-  width: 100%;
+  /* width: 100%; */
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   border-radius: 3px;
-  position: relative;
-  object-fit: cover;
 }
 
 .news-card-body .news-card-title {

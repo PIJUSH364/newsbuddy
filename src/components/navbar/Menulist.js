@@ -4,15 +4,31 @@ export const MenuList = [
     url: "/",
   },
   {
-    title: "RESUME",
-    url: "/resume",
+    title: "Business",
+    url: "/business",
   },
   {
-    title: "PROJECT",
-    url: "/project",
+    title: "Entertainment",
+    url: "/entertainment",
   },
   {
-    title: "ABOUT",
-    url: "/about",
+    title: "General",
+    url: "/general",
+  },
+  {
+    title: "Health",
+    url: "/ Health",
+  },
+  {
+    title: "Science",
+    url: "/Science",
+  },
+  {
+    title: "Sports",
+    url: "/Sports",
+  },
+  {
+    title: "Technology",
+    url: "/Technology",
   },
 ];

@@ -9,35 +9,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 20px;
+  margin: 20px 20px;
 }
-.image {
-  /* this is vary device to device */
-  width: 1200px;
+.slide .image {
+  background-position: center;
+  background-repeat: no-repeat;
   height: 380px;
-  border-radius: 10px;
+  width: 1250px;
+  background-size: 100% 100%;
+  border-radius: 7px;
+}
+.slide .image .imgTextcontent {
+  background-color: rgba(180, 180, 180, 0.411);
+  font-family: "Playfair Display", "Texta, Lodgecode";
+  display: flex;
+  justify-content: space-between;
+  padding: 0.32rem 0.2rem 1.32rem 1.32rem;
+}
+.slide .image .imgTextcontent .img-left > a > button {
+  border: 3px solid #fff;
+  background-color: transparent;
+  padding: 3px 17px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.slide .image .imgTextcontent .img-left > .span .topc {
+  background: #ec2d40;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1px 2px 3px 24px;
+  border-end-start-radius: 27px;
+  letter-spacing: 1px;
 }
 .slider .left-arrow {
   font-size: 3rem;
   position: absolute;
   top: 50%;
-  left: 10px;
-  color: rgb(116, 111, 111);
+  left: 100px;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   user-select: none;
   border-radius: 50%;
+  padding: 5px;
+}
+.slider .left-arrow:hover {
+  background: rgba(128, 128, 128, 0.418);
+}
+.slider .right-arrow:hover {
+  background: rgba(128, 128, 128, 0.418);
+  color: #fff;
 }
 .slider .right-arrow {
-  /* background: tomato; */
   font-size: 3rem;
+  padding: 5px;
   position: absolute;
   top: 50%;
-  right: 10px;
-  color: rgb(116, 111, 111);
+  right: 100px;
+  color: #fff;
   z-index: 10;
   cursor: pointer;
   user-select: none;
+  border-radius: 50%;
 }
 .slide .active {
   opacity: 1;

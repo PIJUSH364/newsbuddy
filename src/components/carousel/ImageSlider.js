@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./Carousel.css";
 import { SliderData } from "./SliderData";
-
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
+
 function ImageSlider({ slides }) {
   const [current, setCurrent] = useState(0);
-
   const length = SliderData.length;
   //   console.log(length);
 
@@ -17,7 +16,7 @@ function ImageSlider({ slides }) {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  console.log(current);
+
   if (!Array.isArray(SliderData) || length <= 0) {
     return null;
   }
@@ -25,25 +24,44 @@ function ImageSlider({ slides }) {
     <div className="slider">
       {/* onClick={prevSlide}  onClick={NextSlide}*/}
       <KeyboardDoubleArrowLeftIcon className="left-arrow" onClick={prevSlide} />
-
-      {SliderData.map((slide, index) => {
-        return (
-          <div key={index} className={index === current ? "slide active" : "slide"}>
-            {index === current  &&
-             ( <img
-                
-                src={slide.image}
-                alt="carousel img1"
-                className="image"
-              />)
-            }
-          </div>
-        );
-      })}
       <KeyboardDoubleArrowRightIcon
         className="right-arrow"
         onClick={NextSlide}
       />
+
+      {SliderData.map((slide, index) => {
+        return (
+          <div
+            key={index}
+            className={index === current ? "slide active" : "slide"}
+          >
+            {index === current && (
+              <div
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                }}
+                className="image"
+              >
+                {/* update content */}
+                <div className="imgTextcontent">
+                  <div className="img-left">
+                    <p>Russia-Ukraine war</p>
+                    <h3>Ukraine as hopes grow for export stability</h3>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                      <button>Deatils..</button>
+                    </a>
+                  </div>
+                  <div className="img-left">
+                    <div className="span">
+                      <p className="topc">Hot news today</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
