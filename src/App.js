@@ -13,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Axio /> */}
       <Navbar />
       <Carousel />
       <Home />

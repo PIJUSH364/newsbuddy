@@ -5,11 +5,11 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home">
-      <div className="home-title">
+      {/* <div className="home-title">
         <p className="news-title">Todays - Highlight</p>
-      </div>
+      </div> */}
       <div className="cardlist">
-        <CardList/>
+        <CardList />
       </div>
     </div>
   );

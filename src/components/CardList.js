@@ -1,10 +1,13 @@
 import React from "react";
 import Carditem from "./Carditem";
 import "./CardList.css";
+import TopicHighlight from "./TopicHighlight";
+
 
 function CardList() {
   return (
-    <div className="cardList">
+    <div className="cardAll">
+      <TopicHighlight />
       <div className="card-render">
         <Carditem />
       </div>
