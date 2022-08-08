@@ -6,7 +6,7 @@ function Carousel() {
   // const slideData=SliderData;
   return (
     <div className="carousel">
-      <ImageSlider slides={SliderData}/>
+      <ImageSlider slides={SliderData} />
     </div>
   );
 }

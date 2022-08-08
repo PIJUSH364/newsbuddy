@@ -4,14 +4,11 @@
   box-sizing: border-box;
 }
 .home {
-  padding: 3rem 4rem;
-  /* background-color: rgba(122, 116, 116, 0.534); */
-  background-color: #878a8f5e;
-  color: #fff;
+  padding: 0 48px;
 }
-.home .home-title {
+/* .home .home-title {
   text-align: center;
   font-size: 32px;
   font-weight: 500;
   color: rgb(134, 120, 212);
-}
+} */

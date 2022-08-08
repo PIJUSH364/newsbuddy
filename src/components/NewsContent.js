@@ -130,4 +130,38 @@ export const NewsContent = [
     content:
       "San Francisco 49ers head coach Kyle Shanahan wants his players going right up to the line, but he doesn't want them toeing it.\r\nIn response to Niners players exchanging punches -- most notably lineba… [+2606 chars]",
   },
+
+  {
+    source: {
+      id: null,
+      name: "The Guardian",
+    },
+    author: "https://www.theguardian.com/profile/barryglendenning",
+    title: "Everton v Chelsea: Premier League – live! - The Guardian",
+    description:
+      "Minute-by-minute report: The hosts are looking to get off on the right foot this season, but a tough test awaits. Join Barry Glendenning",
+    url: "https://www.theguardian.com/football/live/2022/aug/06/everton-v-chelsea-premier-league-live-score-updates",
+    urlToImage:
+      "https://i.guim.co.uk/img/media/97db54a3cd363738664bf94c6b0bd0738519c62c/0_0_3500_2100/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctbGl2ZS5wbmc&enable=upscale&s=d842af1e84b366ae9093264b7c82ed61",
+    publishedAt: "2022-08-06T16:43:19Z",
+    content:
+      "Show key events onlyPlease turn on JavaScript to use this feature\r\n25 min: A headed chance from Doucoure before that Tarkowski effort means Everton are having the better of proceedings but the deadlo… [+7514 chars]",
+  },
+  {
+    source: {
+      id: null,
+      name: "Hollywood Reporter",
+    },
+    author: "Pamela McClintock",
+    title:
+      "Box Office: ‘Bullet Train’ Leaves the Station With $4.6M in Previews - Hollywood Reporter",
+    description:
+      "David Leitch’s Bullet Train easily topped the Friday chart with an opening day gross of $12.6 million, including $4.6 million in Thursday previews. Brad Pitt leads a star-packed cast in this tale of an assassin roaming a high-speed Japanese bullet train. Othe…",
+    url: "https://www.hollywoodreporter.com/movies/movie-news/bullet-train-box-office-previews-1235193639/",
+    urlToImage:
+      "https://www.hollywoodreporter.com/wp-content/uploads/2022/08/Bullet-Train-Still-Still-2-Sony-Publicity-H-2022.jpg?w=1024",
+    publishedAt: "2022-08-06T16:07:30Z",
+    content:
+      "David Leitch’s Bullet Train easily topped the Friday chart with an opening day gross of $12.6 million, including $4.6 million in Thursday previews. \r\nBrad Pitt leads a star-packed cast in this tale o… [+1284 chars]",
+  },
 ];

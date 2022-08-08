@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cardnew {
+  width: 230px;
+}
+.listOfCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 0.2rem;
+  row-gap: 5rem;
+}
+.card-body .card-img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 0 0;
+  padding: 3px;
+  height: 27vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-body:hover .card-img .buttom-read .read-more {
+  /* display: inline-block; */
+  opacity: 1;
+  transition: all 0.7s ease-in-out;
+}
+.card-body .card-img .feed-highlight > span {
+  background-color: #ff0000d3;
+  font-size: 12px;
+  color: #fff;
+  padding: 2px 7px 2px 20px;
+  float: right;
+  border-bottom-left-radius: 30px;
+}
+.card-body .card-img .buttom-read {
+  text-align: center;
+}
+.card-body .card-img .buttom-read .read-more {
+  /* display: none; */
+  opacity: 0;
+  margin-top: 26%;
+  padding: 5px 13px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: rgb(0, 0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+.card-body .card-img .buttom-read .read-more:hover {
+  padding: 5px 16px;
+  background-color: rgb(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 99, 71, 0.8);
+}
+.cardnew .card-content {
+  padding: 18px 2px;
+}
+.cardnew .card-content .card-title {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: " playfair Display";
+}
+.cardnew .card-content .card-description {
+  padding-top: 15px;
+  text-align: justify;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.925);
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial;
+}
+.card-content > p {
+  color: #2e2f3173;
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
