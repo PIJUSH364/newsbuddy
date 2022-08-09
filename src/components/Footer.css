@@ -4,7 +4,12 @@
   box-sizing: border-box;
 }
 .footer {
-  width: 60%;
+  padding: 30px 48px;
+  display: flex;
+}
+
+.footer .news-letter {
+  width: 50%;
 }
 .iconlist ul {
   display: flex;
@@ -19,16 +24,19 @@
   display: flex;
   margin: 5px;
 }
+
 .footer-newsLetter .input > input,
 button {
   padding: 8px;
   border: none;
   background-color: #fff;
-  border: 2px solid gray;
+  border: 1px solid gray;
 }
 .footer-newsLetter .input > button {
   border-left: none;
   border-radius: 0px 6px 6px 0;
+  background-color: rgb(163, 157, 157, 0.3);
+  color: #ec2d40;
 }
 .footer-newsLetter .input > input {
   border-radius: 6px 0px 0px 6px;
@@ -37,9 +45,7 @@ button {
 button:focus {
   outline: none;
 }
-.footer-newsLetter {
-  margin-left: 30px;
-}
+
 .footer-heading {
   margin-left: 30px;
   background: linear-gradient(to right, #d7e1ec59, #d7e1ecb9, #cfd6e6a1);
@@ -47,4 +53,18 @@ button:focus {
 .icon-header {
   margin-left: 30px;
   background: linear-gradient(to right, #d7e1ec59, #d7e1ecb9, #cfd6e6a1);
+}
+.footer-line {
+  background-color: rgb(163, 157, 157, 0.8);
+  text-align: center;
+  padding: 7px;
+  color: #5c6fdb;
+}
+.footer-line p a {
+  text-decoration: none;
+  color: #e72a2aee;
+}
+.footer-line p {
+  margin-top: 0;
+  margin-bottom: 0rem;
 }
