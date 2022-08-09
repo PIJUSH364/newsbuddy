@@ -6,6 +6,7 @@
 .footer {
   padding: 30px 48px;
   display: flex;
+  height: 46vh;
 }
 
 .footer .news-letter {

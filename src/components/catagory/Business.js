@@ -46,7 +46,7 @@ function Business() {
     <div className="business">
       <div className="article-heading">
         {" "}
-        <TopicHighlight title="TODAY BUSINESS" subtitle="BUSINESS GOSIP" />
+        <TopicHighlight title="BUSINESS" subtitle="Imagination at Work" />
       </div>
       <div className="listOfCard "> {businessContent}</div>
     </div>

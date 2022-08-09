@@ -46,7 +46,7 @@ function General() {
       <div className="article-heading">
         {" "}
         <TopicHighlight
-          title="TODAY General news"
+          title="GENERAL"
           subtitle="all types of content"
         />
       </div>

@@ -25,16 +25,10 @@ nav .heading-banner {
   justify-content: space-between;
 }
 nav .heading-banner .healing-logo {
-  width: 70%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 100% 100%;
   background-size: cover;
 }
-img {
-  height: 80px;
-  width: 200px;
+.heading-banner .healing-logo img {
+  width: 550px;
 }
 .logo {
   font-size: 25px;
@@ -54,12 +48,7 @@ img {
   margin: 0;
   top: 2px;
 }
-/* nav .heading-banner {
-  display: flex;
-  justify-content: space-between;
-} */
-.logo p {
-}
+
 .logo .font {
   /* color: #fff; */
 }

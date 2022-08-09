@@ -25,14 +25,14 @@ function Navbar() {
           <p>
             News🌍<span className="font">Budy</span>{" "}
           </p>
-          <p className="slogan">Daily fresh news</p>
+          <p className="slogan">Tomorrow’s News Today</p>
         </div>
-        <div
-          className="healing-logo"
-          // style={{
-          //   background: `url(${"https://image.shutterstock.com/image-vector/blue-wide-screen-webpage-business-600w-695161762.jpg"})`,
-          // }}
-        ></div>
+        <div className="healing-logo">
+          <img
+            src="https://tpc.googlesyndication.com/simgad/2341795690708377255?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmtbBH7TuKTyTTRRkbjcQfRUJfVXw"
+            alt="advertisement poster"
+          />
+        </div>
       </div>
       <div className="menu-icon" onClick={handleClick}>
         <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>

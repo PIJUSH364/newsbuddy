@@ -6,7 +6,7 @@ import TopicHighlight from "./TopicHighlight";
 function CardList() {
   return (
     <div className="cardAll">
-      <TopicHighlight title="TODAY HOT NEWS" subtitle="MOST VIEWED ARTICLE" />
+      <TopicHighlight title="THE LATEST NEWS" subtitle="MOST VIEWED ARTICLE" />
       <div className="card-render">
         <CrardNew />
       </div>

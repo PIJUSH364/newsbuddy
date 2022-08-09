@@ -45,7 +45,7 @@ function Science() {
     <div className="science">
       <div className="article-heading">
         {" "}
-        <TopicHighlight title="TODAY science " subtitle="evoluton of science" />
+        <TopicHighlight title="SCIENCE" subtitle="Keep experimenting" />
       </div>
       <div className="listOfCard "> {scienceContent}</div>
     </div>

@@ -5,41 +5,59 @@
 }
 .slider {
   position: relative;
-  height: 60vh;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px;
+  margin: 10px 20px;
 }
 .slide .image {
   background-position: center;
   background-repeat: no-repeat;
-  height: 380px;
+  height: 399px;
   width: 1250px;
   background-size: 100% 100%;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 .slide .image .imgTextcontent {
-  background-color: rgba(180, 180, 180, 0.411);
+  color: #000;
+  background: linear-gradient(
+    to right,
+    rgba(180, 180, 180, 0.511),
+    rgba(180, 180, 180, 0.211),
+    rgba(180, 180, 180, 0)
+  );
+
   font-family: "Playfair Display", "Texta, Lodgecode";
   display: flex;
   justify-content: space-between;
   padding: 0.32rem 0.2rem 1.32rem 1.32rem;
 }
+.slide .image .imgTextcontent p {
+  margin-top: 9px;
+  margin-bottom: 0rem;
+}
 .slide .image .imgTextcontent .img-left > a > button {
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   background-color: transparent;
   padding: 3px 17px;
   font-size: 14px;
   font-weight: 500;
+  color: #fff;
   letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+}
+.slide .image .imgTextcontent .img-left > a > button:hover {
+  padding: 3px 27px 3px 17px;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(122, 108, 108);
 }
 .slide .image .imgTextcontent .img-left > .span .topc {
   background: #ec2d40;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  padding: 1px 2px 3px 24px;
+  padding: 0px 2px 3px 24px;
   border-end-start-radius: 27px;
   letter-spacing: 1px;
 }

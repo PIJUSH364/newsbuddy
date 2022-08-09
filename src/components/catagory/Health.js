@@ -45,10 +45,7 @@ function Health() {
     <div className="health">
       <div className="article-heading">
         {" "}
-        <TopicHighlight
-          title="TODAY HEALTH SPECIAL"
-          subtitle="ALWAYS TAKE FRESH FOOD"
-        />
+        <TopicHighlight title="HEALTH" subtitle="Health is Wealth" />
       </div>
       <div className="listOfCard "> {healthContent}</div>
     </div>

@@ -46,7 +46,7 @@ function Sports() {
     <div className="sportsContent">
       <div className="article-heading">
         {" "}
-        <TopicHighlight title="TODAY SPORTS" subtitle="EVERY SPORTS BIT" />
+        <TopicHighlight title="SPORTS" subtitle="Defend til the End" />
       </div>
       <div className="listOfCard "> {sportsContent}</div>
     </div>

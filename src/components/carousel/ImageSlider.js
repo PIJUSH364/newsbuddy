@@ -45,8 +45,8 @@ function ImageSlider({ slides }) {
                 {/* update content */}
                 <div className="imgTextcontent">
                   <div className="img-left">
-                    <p>Russia-Ukraine war</p>
-                    <h3>Ukraine as hopes grow for export stability</h3>
+                    <p>{slide.subtitle}</p>
+                    <h3>{slide.title}</h3>
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                       <button>Deatils..</button>
                     </a>

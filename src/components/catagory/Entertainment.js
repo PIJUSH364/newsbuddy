@@ -50,7 +50,7 @@ function Entertainment() {
     <div className="entertainment">
       <div className="article-heading">
         {" "}
-        <TopicHighlight title="TODAY ENTERTEDMENT" subtitle="FILMY GOSIP" />
+        <TopicHighlight title="ENTERTEDMENT" subtitle="Entertaining is the responsibility" />
       </div>
       <div className="listOfCard "> {entertainmentContent}</div>
     </div>
