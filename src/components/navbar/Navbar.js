@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 import { MenuList } from "./Menulist";
 import "./Navbar.css";
 function Navbar() {
@@ -7,9 +7,9 @@ function Navbar() {
   const menulist = MenuList.map(({ url, title }, index) => {
     return (
       <li key={index}>
-        <a exact="true" href={url}>
+        <Link exact="true" to={url}>
           {title}
-        </a>
+        </Link>
       </li>
     );
   });
@@ -23,7 +23,7 @@ function Navbar() {
       <div className="heading-banner">
         <div className="logo">
           <p>
-            News🌍<span className="font">Budy</span>{" "}
+            News🌍<span className="font">Bird</span>{" "}
           </p>
           <p className="slogan">Tomorrow’s News Today</p>
         </div>

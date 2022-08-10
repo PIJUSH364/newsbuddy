@@ -5,30 +5,30 @@ export const MenuList = [
   },
   {
     title: "Business",
-    url: "/business",
+    url: "business",
   },
   {
     title: "Entertainment",
-    url: "/entertainment",
+    url: "entertainment ",
   },
   {
     title: "General",
-    url: "/general",
+    url: "general",
   },
   {
     title: "Health",
-    url: "/ Health",
+    url: "health",
   },
   {
     title: "Science",
-    url: "/Science",
+    url: "science",
   },
   {
     title: "Sports",
-    url: "/Sports",
+    url: "sports",
   },
   {
     title: "Technology",
-    url: "/Technology",
+    url: "technology",
   },
 ];

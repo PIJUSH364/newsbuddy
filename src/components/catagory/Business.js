@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 import { BusinessContent } from "./BusinessContent";
 function Business() {
+  useEffect(() => {
+    document.title = "NewsBuddy || Business";
+  });
   const newPage = "_blank";
   const businessContent = BusinessContent.map(
     ({ ...BusinessContent }, index) => {

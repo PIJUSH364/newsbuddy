@@ -12,6 +12,7 @@
   justify-content: space-between;
   column-gap: 0.2rem;
   row-gap: 5rem;
+  padding: 0 48px;
 }
 .card-body .card-img {
   display: flex;
@@ -82,4 +83,20 @@
   color: #2e2f3173;
   margin-top: 0;
   margin-bottom: 0rem;
+}
+@media only screen and (max-width: 450px) {
+  .cardnew {
+    width: auto;
+  }
+  .listOfCard {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 565px) and (max-width: 1000px) {
+  .cardnew {
+    width: 42vw;
+  }
+  .card-body .card-img {
+    height: 15vh;
+  }
 }

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 // SAME ABOVE ALL
 import { ScienceContent } from "./ScienceContent";
 function Science() {
+  useEffect(() => {
+    document.title = "NewsBuddy || Science";
+  });
+
   const newPage = "_blank";
   const scienceContent = ScienceContent.map(({ ...ScienceContent }, index) => {
     return (

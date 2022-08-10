@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./TopNav.css";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -7,9 +8,10 @@ function TopNav() {
     <div className="topNav">
       <div className="top-points">
         <ul>
-          <a href="#">
+          {/* <Link to="/"><li>HOME</li></Link> */}
+          <Link to="/">
             <li>HOME</li>
-          </a>
+          </Link>
           <a href="#">
             <li>ACHIEVED</li>
           </a>

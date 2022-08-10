@@ -14,8 +14,8 @@
 .slide .image {
   background-position: center;
   background-repeat: no-repeat;
-  height: 399px;
-  width: 1250px;
+  height: 62vh;
+  width: 93vw;
   background-size: 100% 100%;
   border-radius: 3px;
 }
@@ -52,13 +52,16 @@
   transition: all 0.5s ease-in-out;
   background-color: rgb(122, 108, 108);
 }
-.slide .image .imgTextcontent .img-left > .span .topc {
+.slide .image .imgTextcontent .img-right > .span .topc {
+  margin-top: -20px;
+  margin-right: -4px;
   background: #ec2d40;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   padding: 0px 2px 3px 24px;
   border-end-start-radius: 27px;
+  border-start-start-radius: 27px;
   letter-spacing: 1px;
 }
 .slider .left-arrow {
@@ -101,4 +104,89 @@
   opacity: 0;
   transition: all 2s ease-in-out;
   /* transform: scale(1.08); */
+}
+
+@media only screen and (max-width: 450px) {
+  .slide .image {
+    height: 24vh;
+    background-size: cover;
+  }
+  .slider .right-arrow {
+    font-size: 2rem;
+    top: 42%;
+    right: -16px;
+  }
+  .slider .left-arrow {
+    font-size: 2rem;
+    top: 42%;
+    left: -16px;
+    user-select: none;
+  }
+  .slide .image .imgTextcontent .img-right > .span .topc {
+    margin-top: -16px;
+    margin-right: 0px;
+    font-size: 13px;
+    padding: 0px 4px 3px 9px;
+    border-top-left-radius: 30px;
+  }
+
+  .slide .image .imgTextcontent .img-right > .span {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .slide .image .imgTextcontent {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .slide .image .imgTextcontent p {
+    margin-top: -4px;
+  }
+  .slide .image .imgTextcontent {
+    background: linear-gradient(
+      to right,
+      rgba(180, 180, 180, 0),
+      rgba(180, 180, 180, 0),
+      rgba(180, 180, 180, 0)
+    );
+  }
+  .slide .image .imgTextcontent .img-left p {
+    color: #fff;
+    padding: 3px 15px;
+    font-size: 13px;
+  }
+  .slide .image .imgTextcontent .img-left h3 {
+    padding: 3px 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .slide .image .imgTextcontent .img-left > a > button {
+    margin-left: 33%;
+    margin-top: 30px;
+  }
+  .slider .left-arrow:hover {
+    background: transparent;
+    color: tomato;
+  }
+  .slider .right-arrow:hover {
+    background: transparent;
+    color: tomato;
+  }
+}
+@media only screen and (min-width: 565px) and (max-width: 1000px) {
+  .slide .image {
+    height: 30vh;
+    width: 96vw;
+  }
+  .heading-banner .healing-logo img {
+    width: 50vw;
+  }
+  .logo .slogan {
+    font-size: 10px;
+  }
+  .slide .image .imgTextcontent .img-right > .span .topc {
+    font-size: 14px;
+  }
+  nav {
+    padding: 10px 15px 4px 15px;
+  }
 }

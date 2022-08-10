@@ -51,7 +51,7 @@ function ImageSlider({ slides }) {
                       <button>Deatils..</button>
                     </a>
                   </div>
-                  <div className="img-left">
+                  <div className="img-right">
                     <div className="span">
                       <p className="topc">Hot news today</p>
                     </div>

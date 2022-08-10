@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 // SAME ABOVE ALL
 import { HealthContent } from "./HealthContent";
 function Health() {
+  useEffect(() => {
+    document.title = "NewsBuddy || Health";
+  });
+
   const newPage = "_blank";
   const healthContent = HealthContent.map(({ ...HealthContent }, index) => {
     return (

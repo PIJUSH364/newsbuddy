@@ -37,6 +37,7 @@ nav .heading-banner .healing-logo {
   color: #000;
   font-family: "Playfair Display", "Montserrat";
   letter-spacing: 3px;
+  transition: all 0.7s ease-in-out;
 }
 .logo p {
   margin-top: 0;
@@ -53,7 +54,7 @@ nav .heading-banner .healing-logo {
   /* color: #fff; */
 }
 .logo:hover {
-  color: #fff;
+  color: tomato;
   cursor: -webkit-grabbing;
   transition: all 0.7s ease-in-out;
 }
@@ -76,8 +77,7 @@ nav .heading-banner .healing-logo {
   text-decoration: none;
   font-size: 19px;
   font-weight: 600;
-  /* padding: 5px 10px; */
-  /* margin-left: 20px; */
+  transition: all 0.7s ease-in-out;
 }
 nav ul {
   padding-left: 0rem;
@@ -86,11 +86,13 @@ nav ul {
   border-right: none;
   padding: 8px 2px;
 }
+
 .menu-list li a:hover,
 .menu-list li a.active {
-  background-color: #fff;
+  background-color: #002147;
   border-radius: 3px;
-  color: #000;
+  color: #fff;
+
   transition: all 0.7s ease-in-out;
 }
 .menu-icon {
@@ -123,6 +125,9 @@ nav ul {
     font-size: 14px;
     margin-left: 10px;
   }
+  .heading-banner .healing-logo img {
+    width: 43vw;
+  }
 }
 @media only screen and (max-width: 450px) {
   .menu-icon {
@@ -140,7 +145,7 @@ nav ul {
     /* display: contents; */
     display: flex;
     border-radius: 0px 0 2px 2px;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
     transition: all 0.8s ease-in-out;
   }
   .menu-list li {
@@ -156,5 +161,42 @@ nav ul {
     /* display: none; */
     opacity: 0;
     transition: all 0.8s ease-in-out;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .heading-banner .healing-logo img {
+    display: none;
+  }
+  nav {
+    row-gap: 21px;
+    margin-bottom: 20px;
+    padding: 20px 20px 0px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-size: 17px;
+  }
+  .logo .slogan {
+    font-size: 8px;
+    margin: 0;
+    top: 0px;
+  }
+
+  .menu-list {
+    z-index: 999;
+    background: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+    top: 98px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    border-radius: 0px 0 2px 2px;
   }
 }

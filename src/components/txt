@@ -1,4 +1,25 @@
 
+import React, { useEffect } from "react";
+
+
+useEffect(() => {
+  document.title = "NewsBuddy || Technology";
+});
+
+
+
+business
+entertainment 
+general
+health
+science
+sports
+technology
+
+
+
+
+
 TechnologyContent.js
 https://tpc.googlesyndication.com/simgad/2341795690708377255?sqp=4sqPyQQ7QjkqNxABHQAAtEIgASgBMAk4A0DwkwlYAWBfcAKAAQGIAQGdAQAAgD-oAQGwAYCt4gS4AV_FAS2ynT4&rs=AOga4qmtbBH7TuKTyTTRRkbjcQfRUJfVXw
 

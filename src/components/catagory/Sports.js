@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 import { SportsContent } from "./SportsContent";
 
 function Sports() {
+  useEffect(() => {
+    document.title = "NewsBuddy || Sports";
+  });
+
   const newPage = "_blank";
   const sportsContent = SportsContent.map(({ ...SportsContent }, index) => {
     return (

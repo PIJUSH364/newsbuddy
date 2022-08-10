@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 // SAME ABOVE ALL
 import { EntertainmentContent } from "./EntertainmentContent";
 
 function Entertainment() {
+  useEffect(() => {
+    document.title = "NewsBuddy || Entertainment";
+  });
+
   const newPage = "_blank";
   const entertainmentContent = EntertainmentContent.map(
     ({ ...EntertainmentContent }, index) => {
@@ -50,7 +54,10 @@ function Entertainment() {
     <div className="entertainment">
       <div className="article-heading">
         {" "}
-        <TopicHighlight title="ENTERTEDMENT" subtitle="Entertaining is the responsibility" />
+        <TopicHighlight
+          title="ENTERTEDMENT"
+          subtitle="Entertaining is the responsibility"
+        />
       </div>
       <div className="listOfCard "> {entertainmentContent}</div>
     </div>

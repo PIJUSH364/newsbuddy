@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../CardNew.css";
 import TopicHighlight from "../TopicHighlight";
 // SAME ABOVE ALL
 import { GeneralContent } from "./GeneralContent";
 function General() {
+  useEffect(() => {
+    document.title = "NewsBuddy || General";
+  });
+
   const newPage = "_blank";
   const generalContent = GeneralContent.map(({ ...GeneralContent }, index) => {
     return (
@@ -45,10 +49,7 @@ function General() {
     <div className="general">
       <div className="article-heading">
         {" "}
-        <TopicHighlight
-          title="GENERAL"
-          subtitle="all types of content"
-        />
+        <TopicHighlight title="GENERAL" subtitle="all types of content" />
       </div>
       <div className="listOfCard "> {generalContent}</div>
     </div>

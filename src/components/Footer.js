@@ -14,10 +14,7 @@ function Footer() {
         <div className="news-letter">
           <div className="article-heading">
             {" "}
-            <TopicHighlight
-              title="SEARCH ARTICLES "
-              subtitle="YOUR CHOICE"
-            />
+            <TopicHighlight title="SEARCH ARTICLES " subtitle="YOUR CHOICE" />
           </div>
           <div className="footer-newsLetter">
             <div className="input">
@@ -70,12 +67,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-line">
-        <p>
-          &#169; Copyright NewsBudy 2022 &nbsp;<span> Develope By</span>{" "}
-          <a href="https://www.linkedin.com/in/pijush-ray-mondal-621980192/">
-            Pijush Ray Mondal
-          </a>
-        </p>
+        <p>&#169; NewsBird 2022&nbsp;All right reserved</p>
       </div>
     </>
   );
